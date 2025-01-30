@@ -4,11 +4,11 @@ pipeline {
         maven 'm3'
     }
     environment {
-        GKE_CLUSTER_NAME = 'jenkins-cd'
-        GKE_PROJECT = 'phrasal-verve-447910-d9'
-        GKE_ZONE = 'us-central1-a'
+        GKE_CLUSTER_NAME = 'prod-phase-sonar'
+        GKE_PROJECT = 'jenkins-sonar-448116'
+        GKE_ZONE = 'us-central1-c'
         DOCKER_REGISTRY = 'docker.io/rohith9769'
-        DOCKER_IMAGE_NAME = 'pet-image'
+        DOCKER_IMAGE_NAME = 'trivyimage'
         FULL_IMAGE_PATH = "${DOCKER_REGISTRY}/${DOCKER_IMAGE_NAME}:v1"
     }
     stages {
